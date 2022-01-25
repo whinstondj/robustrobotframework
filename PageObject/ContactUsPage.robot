@@ -10,17 +10,12 @@ Verify Contact Title
 Set Focus on Username Field
     set focus to element    ${userNameField}
 
-Type Name
-    input text      ${userNameField}    First Name
-
-Type Email
-    input text      ${userEmailField}        email@email.com
-
-Type Enquiry
-    input text      ${enquiryField}   Here is the text major to 10 chars I want to send
-
 Take Picture
     capture page screenshot
 
 Send Information
     click element       ${submitButton}
+
+Click Continue
+    wait until element is visible    ${successButton}
+    click element      ${successButton}
