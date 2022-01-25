@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.8.5 on win32)" generated="20220123 23:59:09.478" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.8.5 on win32)" generated="20220124 20:28:48.361" rpa="false" schemaversion="2">
 <suite id="s1" name="TestCases" source="D:\FrameworksRobustness\WinstonCastilloStore\TestCases">
 <suite id="s1-s1" name="001 Automation" source="D:\FrameworksRobustness\WinstonCastilloStore\TestCases\001_automation.robot">
 <test id="s1-s1-t1" name="0001 Opening the website">
@@ -7,121 +7,738 @@
 <arg>https://winstoncastillo.com/robot-selenium/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220123 23:59:09.844" level="INFO">Opening browser 'chrome' to base url 'https://winstoncastillo.com/robot-selenium/'.</msg>
-<status status="PASS" starttime="20220123 23:59:09.844" endtime="20220123 23:59:13.266"/>
+<msg timestamp="20220124 20:28:48.703" level="INFO">Opening browser 'chrome' to base url 'https://winstoncastillo.com/robot-selenium/'.</msg>
+<status status="PASS" starttime="20220124 20:28:48.702" endtime="20220124 20:28:52.639"/>
 </kw>
 <kw name="Verify Homepage Title" library="HomePage">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>La tienda de Winston Castillo</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220123 23:59:13.271" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
-<status status="PASS" starttime="20220123 23:59:13.267" endtime="20220123 23:59:13.271"/>
+<msg timestamp="20220124 20:28:52.645" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:28:52.639" endtime="20220124 20:28:52.645"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:13.266" endtime="20220123 23:59:13.272"/>
+<status status="PASS" starttime="20220124 20:28:52.639" endtime="20220124 20:28:52.645"/>
 </kw>
 <kw name="Click on Contact" library="HomePage">
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>${contactUsLink}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220123 23:59:13.273" endtime="20220123 23:59:13.353"/>
+<status status="PASS" starttime="20220124 20:28:52.646" endtime="20220124 20:28:52.706"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${contactUsLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220123 23:59:13.354" level="INFO">Clicking element 'link:Contact Us'.</msg>
-<status status="PASS" starttime="20220123 23:59:13.353" endtime="20220123 23:59:13.708"/>
+<msg timestamp="20220124 20:28:52.706" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:28:52.706" endtime="20220124 20:28:53.052"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:13.272" endtime="20220123 23:59:13.708"/>
+<status status="PASS" starttime="20220124 20:28:52.646" endtime="20220124 20:28:53.052"/>
 </kw>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20220123 23:59:09.843" endtime="20220123 23:59:13.709"/>
+<status status="PASS" starttime="20220124 20:28:48.702" endtime="20220124 20:28:53.053"/>
 </test>
 <test id="s1-s1-t2" name="002 Sending User Information">
 <kw name="Verify Contact Title" library="ContactUsPage">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Contact Us</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220123 23:59:13.725" level="INFO">Page title is 'Contact Us'.</msg>
-<status status="PASS" starttime="20220123 23:59:13.715" endtime="20220123 23:59:13.725"/>
+<msg timestamp="20220124 20:28:53.064" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:28:53.057" endtime="20220124 20:28:53.065"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:13.714" endtime="20220123 23:59:13.725"/>
+<status status="PASS" starttime="20220124 20:28:53.056" endtime="20220124 20:28:53.065"/>
 </kw>
 <kw name="Set Focus on Username Field" library="ContactUsPage">
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>${userNameField}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220123 23:59:13.726" endtime="20220123 23:59:13.748"/>
+<status status="PASS" starttime="20220124 20:28:53.066" endtime="20220124 20:28:53.090"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:13.725" endtime="20220123 23:59:13.749"/>
+<status status="PASS" starttime="20220124 20:28:53.066" endtime="20220124 20:28:53.090"/>
 </kw>
-<kw name="Type Name" library="ContactUsPage">
+<status status="PASS" starttime="20220124 20:28:53.055" endtime="20220124 20:28:53.091"/>
+</test>
+<doc>This is my first automation of the video class</doc>
+<status status="PASS" starttime="20220124 20:28:48.399" endtime="20220124 20:28:53.093"/>
+</suite>
+<suite id="s1-s2" name="002 Datareader" source="D:\FrameworksRobustness\WinstonCastilloStore\TestCases\002_datareader.robot">
+<test id="s1-s2-t1" name="Send the information Maria Gonzalez with the email mariagonzalez@hotmail.com">
+<kw name="Enter User Information">
+<arg>Maria Gonzalez</arg>
+<arg>mariagonzalez@hotmail.com</arg>
+<arg>One: Here we can have another kind of testing and whatever I want to write</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${userNameField}</arg>
-<arg>First Name</arg>
+<arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220123 23:59:13.750" level="INFO">Typing text 'First Name' into text field 'input-name'.</msg>
-<status status="PASS" starttime="20220123 23:59:13.750" endtime="20220123 23:59:13.898"/>
+<msg timestamp="20220124 20:28:54.508" level="INFO">Typing text 'Maria Gonzalez' into text field 'input-name'.</msg>
+<status status="PASS" starttime="20220124 20:28:54.507" endtime="20220124 20:28:54.596"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:13.749" endtime="20220123 23:59:13.898"/>
-</kw>
-<kw name="Type Email" library="ContactUsPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${userEmailField}</arg>
-<arg>email@email.com</arg>
+<arg>${useremail}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220123 23:59:13.900" level="INFO">Typing text 'email@email.com' into text field 'input-email'.</msg>
-<status status="PASS" starttime="20220123 23:59:13.900" endtime="20220123 23:59:14.107"/>
+<msg timestamp="20220124 20:28:54.597" level="INFO">Typing text 'mariagonzalez@hotmail.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220124 20:28:54.597" endtime="20220124 20:28:54.724"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:13.899" endtime="20220123 23:59:14.108"/>
-</kw>
-<kw name="Type Enquiry" library="ContactUsPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${enquiryField}</arg>
-<arg>Here is the text major to 10 chars I want to send</arg>
+<arg>${userenquiry}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220123 23:59:14.112" level="INFO">Typing text 'Here is the text major to 10 chars I want to send' into text field 'input-enquiry'.</msg>
-<status status="PASS" starttime="20220123 23:59:14.111" endtime="20220123 23:59:14.345"/>
-</kw>
-<status status="PASS" starttime="20220123 23:59:14.110" endtime="20220123 23:59:14.345"/>
+<msg timestamp="20220124 20:28:54.725" level="INFO">Typing text 'One: Here we can have another kind of testing and whatever I want to write' into text field 'input-enquiry'.</msg>
+<status status="PASS" starttime="20220124 20:28:54.724" endtime="20220124 20:28:54.933"/>
 </kw>
 <kw name="Take Picture" library="ContactUsPage">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220123 23:59:14.687" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220123 23:59:14.346" endtime="20220123 23:59:14.687"/>
+<msg timestamp="20220124 20:28:55.096" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 20:28:54.933" endtime="20220124 20:28:55.096"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:14.345" endtime="20220123 23:59:14.687"/>
+<status status="PASS" starttime="20220124 20:28:54.933" endtime="20220124 20:28:55.096"/>
 </kw>
 <kw name="Send Information" library="ContactUsPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submitButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220123 23:59:14.688" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
-<status status="PASS" starttime="20220123 23:59:14.688" endtime="20220123 23:59:15.341"/>
+<msg timestamp="20220124 20:28:55.097" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20220124 20:28:55.097" endtime="20220124 20:28:55.751"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:14.688" endtime="20220123 23:59:15.341"/>
+<status status="PASS" starttime="20220124 20:28:55.096" endtime="20220124 20:28:55.751"/>
 </kw>
+<kw name="Click Continue" library="ContactUsPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220124 20:28:55.753" endtime="20220124 20:28:55.805"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:55.806" level="INFO">Clicking element 'link:Continue'.</msg>
+<status status="PASS" starttime="20220124 20:28:55.806" endtime="20220124 20:28:56.272"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:55.752" endtime="20220124 20:28:56.272"/>
+</kw>
+<kw name="Verify Homepage Title" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>La tienda de Winston Castillo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:28:56.280" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:28:56.276" endtime="20220124 20:28:56.280"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:56.273" endtime="20220124 20:28:56.281"/>
+</kw>
+<kw name="Click on Contact" library="HomePage">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220124 20:28:56.281" endtime="20220124 20:28:56.317"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:56.318" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:28:56.317" endtime="20220124 20:28:56.700"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:56.281" endtime="20220124 20:28:56.700"/>
+</kw>
+<kw name="Verify Contact Title" library="ContactUsPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Contact Us</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:28:56.706" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:28:56.701" endtime="20220124 20:28:56.706"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:56.701" endtime="20220124 20:28:56.707"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:54.507" endtime="20220124 20:28:56.707"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:54.504" endtime="20220124 20:28:56.708"/>
+</test>
+<test id="s1-s2-t2" name="Send the information Peter Simpson with the email psimpson@gmail.com">
+<kw name="Enter User Information">
+<arg>Peter Simpson</arg>
+<arg>psimpson@gmail.com</arg>
+<arg>Two: Here we can have another kind of testing and whatever I want to write</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userNameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:56.718" level="INFO">Typing text 'Peter Simpson' into text field 'input-name'.</msg>
+<status status="PASS" starttime="20220124 20:28:56.717" endtime="20220124 20:28:56.859"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userEmailField}</arg>
+<arg>${useremail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:56.861" level="INFO">Typing text 'psimpson@gmail.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220124 20:28:56.860" endtime="20220124 20:28:56.975"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enquiryField}</arg>
+<arg>${userenquiry}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:56.977" level="INFO">Typing text 'Two: Here we can have another kind of testing and whatever I want to write' into text field 'input-enquiry'.</msg>
+<status status="PASS" starttime="20220124 20:28:56.976" endtime="20220124 20:28:57.165"/>
+</kw>
+<kw name="Take Picture" library="ContactUsPage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220124 20:28:57.314" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 20:28:57.166" endtime="20220124 20:28:57.315"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:57.165" endtime="20220124 20:28:57.315"/>
+</kw>
+<kw name="Send Information" library="ContactUsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:57.317" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20220124 20:28:57.316" endtime="20220124 20:28:57.949"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:57.315" endtime="20220124 20:28:57.950"/>
+</kw>
+<kw name="Click Continue" library="ContactUsPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220124 20:28:57.951" endtime="20220124 20:28:57.999"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:57.999" level="INFO">Clicking element 'link:Continue'.</msg>
+<status status="PASS" starttime="20220124 20:28:57.999" endtime="20220124 20:28:58.452"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:57.950" endtime="20220124 20:28:58.452"/>
+</kw>
+<kw name="Verify Homepage Title" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>La tienda de Winston Castillo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:28:58.459" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:28:58.453" endtime="20220124 20:28:58.459"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:58.452" endtime="20220124 20:28:58.460"/>
+</kw>
+<kw name="Click on Contact" library="HomePage">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220124 20:28:58.461" endtime="20220124 20:28:58.490"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:58.492" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:28:58.491" endtime="20220124 20:28:58.851"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:58.460" endtime="20220124 20:28:58.851"/>
+</kw>
+<kw name="Verify Contact Title" library="ContactUsPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Contact Us</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:28:58.856" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:28:58.852" endtime="20220124 20:28:58.857"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:58.851" endtime="20220124 20:28:58.857"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:56.716" endtime="20220124 20:28:58.858"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:56.710" endtime="20220124 20:28:58.862"/>
+</test>
+<test id="s1-s2-t3" name="Send the information Jason Palmery with the email palmerito@yahoo.com">
+<kw name="Enter User Information">
+<arg>Jason Palmery</arg>
+<arg>palmerito@yahoo.com</arg>
+<arg>Three: Here we can have another kind of testing and whatever I want to write</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userNameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:58.869" level="INFO">Typing text 'Jason Palmery' into text field 'input-name'.</msg>
+<status status="PASS" starttime="20220124 20:28:58.868" endtime="20220124 20:28:58.986"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userEmailField}</arg>
+<arg>${useremail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:58.987" level="INFO">Typing text 'palmerito@yahoo.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220124 20:28:58.986" endtime="20220124 20:28:59.114"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enquiryField}</arg>
+<arg>${userenquiry}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:59.115" level="INFO">Typing text 'Three: Here we can have another kind of testing and whatever I want to write' into text field 'input-enquiry'.</msg>
+<status status="PASS" starttime="20220124 20:28:59.114" endtime="20220124 20:28:59.306"/>
+</kw>
+<kw name="Take Picture" library="ContactUsPage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220124 20:28:59.486" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 20:28:59.307" endtime="20220124 20:28:59.486"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:59.307" endtime="20220124 20:28:59.487"/>
+</kw>
+<kw name="Send Information" library="ContactUsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:28:59.488" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20220124 20:28:59.487" endtime="20220124 20:29:00.183"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:59.487" endtime="20220124 20:29:00.183"/>
+</kw>
+<kw name="Click Continue" library="ContactUsPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220124 20:29:00.184" endtime="20220124 20:29:00.223"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:00.224" level="INFO">Clicking element 'link:Continue'.</msg>
+<status status="PASS" starttime="20220124 20:29:00.223" endtime="20220124 20:29:00.647"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:00.184" endtime="20220124 20:29:00.648"/>
+</kw>
+<kw name="Verify Homepage Title" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>La tienda de Winston Castillo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:00.651" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:29:00.648" endtime="20220124 20:29:00.651"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:00.648" endtime="20220124 20:29:00.651"/>
+</kw>
+<kw name="Click on Contact" library="HomePage">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220124 20:29:00.652" endtime="20220124 20:29:00.687"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:00.687" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:00.687" endtime="20220124 20:29:01.062"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:00.651" endtime="20220124 20:29:01.062"/>
+</kw>
+<kw name="Verify Contact Title" library="ContactUsPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Contact Us</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:01.068" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:01.063" endtime="20220124 20:29:01.068"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:01.062" endtime="20220124 20:29:01.068"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:58.868" endtime="20220124 20:29:01.068"/>
+</kw>
+<status status="PASS" starttime="20220124 20:28:58.864" endtime="20220124 20:29:01.069"/>
+</test>
+<test id="s1-s2-t4" name="Send the information Ross Bott with the email therossbott@hotmail.com">
+<kw name="Enter User Information">
+<arg>Ross Bott</arg>
+<arg>therossbott@hotmail.com</arg>
+<arg>Four: Here we can have another kind of testing and whatever I want to write</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userNameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:01.075" level="INFO">Typing text 'Ross Bott' into text field 'input-name'.</msg>
+<status status="PASS" starttime="20220124 20:29:01.074" endtime="20220124 20:29:01.188"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userEmailField}</arg>
+<arg>${useremail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:01.189" level="INFO">Typing text 'therossbott@hotmail.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220124 20:29:01.188" endtime="20220124 20:29:01.310"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enquiryField}</arg>
+<arg>${userenquiry}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:01.311" level="INFO">Typing text 'Four: Here we can have another kind of testing and whatever I want to write' into text field 'input-enquiry'.</msg>
+<status status="PASS" starttime="20220124 20:29:01.311" endtime="20220124 20:29:01.496"/>
+</kw>
+<kw name="Take Picture" library="ContactUsPage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220124 20:29:01.633" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 20:29:01.497" endtime="20220124 20:29:01.633"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:01.497" endtime="20220124 20:29:01.634"/>
+</kw>
+<kw name="Send Information" library="ContactUsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:01.635" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20220124 20:29:01.634" endtime="20220124 20:29:02.334"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:01.634" endtime="20220124 20:29:02.334"/>
+</kw>
+<kw name="Click Continue" library="ContactUsPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220124 20:29:02.335" endtime="20220124 20:29:02.372"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:02.373" level="INFO">Clicking element 'link:Continue'.</msg>
+<status status="PASS" starttime="20220124 20:29:02.372" endtime="20220124 20:29:02.787"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:02.334" endtime="20220124 20:29:02.787"/>
+</kw>
+<kw name="Verify Homepage Title" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>La tienda de Winston Castillo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:02.800" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:29:02.790" endtime="20220124 20:29:02.800"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:02.788" endtime="20220124 20:29:02.801"/>
+</kw>
+<kw name="Click on Contact" library="HomePage">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220124 20:29:02.801" endtime="20220124 20:29:02.831"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:02.832" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:02.831" endtime="20220124 20:29:03.241"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:02.801" endtime="20220124 20:29:03.242"/>
+</kw>
+<kw name="Verify Contact Title" library="ContactUsPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Contact Us</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:03.249" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:03.244" endtime="20220124 20:29:03.249"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:03.242" endtime="20220124 20:29:03.249"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:01.073" endtime="20220124 20:29:03.250"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:01.070" endtime="20220124 20:29:03.250"/>
+</test>
+<test id="s1-s2-t5" name="Send the information Crystal Mansfield with the email crystalm@icloud.com">
+<kw name="Enter User Information">
+<arg>Crystal Mansfield</arg>
+<arg>crystalm@icloud.com</arg>
+<arg>Five: Here we can have another kind of testing and whatever I want to write</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userNameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:03.257" level="INFO">Typing text 'Crystal Mansfield' into text field 'input-name'.</msg>
+<status status="PASS" starttime="20220124 20:29:03.256" endtime="20220124 20:29:03.385"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userEmailField}</arg>
+<arg>${useremail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:03.386" level="INFO">Typing text 'crystalm@icloud.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220124 20:29:03.385" endtime="20220124 20:29:03.518"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enquiryField}</arg>
+<arg>${userenquiry}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:03.518" level="INFO">Typing text 'Five: Here we can have another kind of testing and whatever I want to write' into text field 'input-enquiry'.</msg>
+<status status="PASS" starttime="20220124 20:29:03.518" endtime="20220124 20:29:03.714"/>
+</kw>
+<kw name="Take Picture" library="ContactUsPage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220124 20:29:03.877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 20:29:03.715" endtime="20220124 20:29:03.877"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:03.715" endtime="20220124 20:29:03.877"/>
+</kw>
+<kw name="Send Information" library="ContactUsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:03.878" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20220124 20:29:03.878" endtime="20220124 20:29:04.561"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:03.877" endtime="20220124 20:29:04.562"/>
+</kw>
+<kw name="Click Continue" library="ContactUsPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220124 20:29:04.564" endtime="20220124 20:29:04.597"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:04.598" level="INFO">Clicking element 'link:Continue'.</msg>
+<status status="PASS" starttime="20220124 20:29:04.598" endtime="20220124 20:29:05.035"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:04.563" endtime="20220124 20:29:05.035"/>
+</kw>
+<kw name="Verify Homepage Title" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>La tienda de Winston Castillo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:05.051" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:29:05.035" endtime="20220124 20:29:05.051"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:05.035" endtime="20220124 20:29:05.051"/>
+</kw>
+<kw name="Click on Contact" library="HomePage">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220124 20:29:05.052" endtime="20220124 20:29:05.086"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:05.086" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:05.086" endtime="20220124 20:29:05.438"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:05.051" endtime="20220124 20:29:05.438"/>
+</kw>
+<kw name="Verify Contact Title" library="ContactUsPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Contact Us</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:05.465" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:05.440" endtime="20220124 20:29:05.465"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:05.438" endtime="20220124 20:29:05.465"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:03.254" endtime="20220124 20:29:05.466"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:03.252" endtime="20220124 20:29:05.466"/>
+</test>
+<test id="s1-s2-t6" name="Send the information Winston Castillo with the email winston@gmail.com">
+<kw name="Enter User Information">
+<arg>Winston Castillo</arg>
+<arg>winston@gmail.com</arg>
+<arg>Six: Here we can have another kind of testing and whatever I want to write</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userNameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:05.475" level="INFO">Typing text 'Winston Castillo' into text field 'input-name'.</msg>
+<status status="PASS" starttime="20220124 20:29:05.475" endtime="20220124 20:29:05.593"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userEmailField}</arg>
+<arg>${useremail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:05.594" level="INFO">Typing text 'winston@gmail.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220124 20:29:05.593" endtime="20220124 20:29:05.708"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enquiryField}</arg>
+<arg>${userenquiry}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:05.708" level="INFO">Typing text 'Six: Here we can have another kind of testing and whatever I want to write' into text field 'input-enquiry'.</msg>
+<status status="PASS" starttime="20220124 20:29:05.708" endtime="20220124 20:29:05.912"/>
+</kw>
+<kw name="Take Picture" library="ContactUsPage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220124 20:29:06.053" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 20:29:05.912" endtime="20220124 20:29:06.053"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:05.912" endtime="20220124 20:29:06.053"/>
+</kw>
+<kw name="Send Information" library="ContactUsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:06.054" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20220124 20:29:06.054" endtime="20220124 20:29:06.728"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:06.054" endtime="20220124 20:29:06.728"/>
+</kw>
+<kw name="Click Continue" library="ContactUsPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220124 20:29:06.729" endtime="20220124 20:29:06.768"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:06.769" level="INFO">Clicking element 'link:Continue'.</msg>
+<status status="PASS" starttime="20220124 20:29:06.768" endtime="20220124 20:29:07.193"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:06.728" endtime="20220124 20:29:07.194"/>
+</kw>
+<kw name="Verify Homepage Title" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>La tienda de Winston Castillo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:07.197" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:29:07.194" endtime="20220124 20:29:07.197"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:07.194" endtime="20220124 20:29:07.197"/>
+</kw>
+<kw name="Click on Contact" library="HomePage">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220124 20:29:07.198" endtime="20220124 20:29:07.229"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:07.230" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:07.229" endtime="20220124 20:29:07.601"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:07.197" endtime="20220124 20:29:07.602"/>
+</kw>
+<kw name="Verify Contact Title" library="ContactUsPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Contact Us</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:07.611" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:07.603" endtime="20220124 20:29:07.612"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:07.602" endtime="20220124 20:29:07.612"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:05.474" endtime="20220124 20:29:07.613"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:05.470" endtime="20220124 20:29:07.614"/>
+</test>
+<test id="s1-s2-t7" name="Send the information The Students with the email thestudents@yahoo.com">
+<kw name="Enter User Information">
+<arg>The Students</arg>
+<arg>thestudents@yahoo.com</arg>
+<arg>Seven: Here we can have another kind of testing and whatever I want to write</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userNameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:07.624" level="INFO">Typing text 'The Students' into text field 'input-name'.</msg>
+<status status="PASS" starttime="20220124 20:29:07.623" endtime="20220124 20:29:07.751"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userEmailField}</arg>
+<arg>${useremail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:07.752" level="INFO">Typing text 'thestudents@yahoo.com' into text field 'input-email'.</msg>
+<status status="PASS" starttime="20220124 20:29:07.752" endtime="20220124 20:29:07.895"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enquiryField}</arg>
+<arg>${userenquiry}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:07.895" level="INFO">Typing text 'Seven: Here we can have another kind of testing and whatever I want to write' into text field 'input-enquiry'.</msg>
+<status status="PASS" starttime="20220124 20:29:07.895" endtime="20220124 20:29:08.077"/>
+</kw>
+<kw name="Take Picture" library="ContactUsPage">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220124 20:29:08.219" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220124 20:29:08.078" endtime="20220124 20:29:08.219"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:08.077" endtime="20220124 20:29:08.219"/>
+</kw>
+<kw name="Send Information" library="ContactUsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:08.221" level="INFO">Clicking element 'xpath://*[@id="content"]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20220124 20:29:08.221" endtime="20220124 20:29:08.912"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:08.220" endtime="20220124 20:29:08.913"/>
+</kw>
+<kw name="Click Continue" library="ContactUsPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220124 20:29:08.913" endtime="20220124 20:29:08.944"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${successButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:08.944" level="INFO">Clicking element 'link:Continue'.</msg>
+<status status="PASS" starttime="20220124 20:29:08.944" endtime="20220124 20:29:09.384"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:08.913" endtime="20220124 20:29:09.385"/>
+</kw>
+<kw name="Verify Homepage Title" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>La tienda de Winston Castillo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:09.398" level="INFO">Page title is 'La tienda de Winston Castillo'.</msg>
+<status status="PASS" starttime="20220124 20:29:09.386" endtime="20220124 20:29:09.398"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:09.385" endtime="20220124 20:29:09.398"/>
+</kw>
+<kw name="Click on Contact" library="HomePage">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220124 20:29:09.399" endtime="20220124 20:29:09.430"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUsLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220124 20:29:09.430" level="INFO">Clicking element 'link:Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:09.430" endtime="20220124 20:29:09.806"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:09.399" endtime="20220124 20:29:09.807"/>
+</kw>
+<kw name="Verify Contact Title" library="ContactUsPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Contact Us</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220124 20:29:09.827" level="INFO">Page title is 'Contact Us'.</msg>
+<status status="PASS" starttime="20220124 20:29:09.808" endtime="20220124 20:29:09.827"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:09.807" endtime="20220124 20:29:09.828"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:07.621" endtime="20220124 20:29:09.828"/>
+</kw>
+<status status="PASS" starttime="20220124 20:29:07.616" endtime="20220124 20:29:09.828"/>
+</test>
+<doc>here we will read data from an excel file</doc>
+<status status="PASS" starttime="20220124 20:28:53.097" endtime="20220124 20:29:09.830"/>
+</suite>
+<suite id="s1-s3" name="003 Closebrowser" source="D:\FrameworksRobustness\WinstonCastilloStore\TestCases\003_closebrowser.robot">
+<test id="s1-s3-t1" name="Closing the browser">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220123 23:59:15.343" endtime="20220123 23:59:17.706"/>
+<status status="PASS" starttime="20220124 20:29:09.840" endtime="20220124 20:29:12.111"/>
 </kw>
-<status status="PASS" starttime="20220123 23:59:13.711" endtime="20220123 23:59:17.707"/>
+<status status="PASS" starttime="20220124 20:29:09.839" endtime="20220124 20:29:12.113"/>
 </test>
-<doc>This is my first automation of the video class</doc>
-<status status="PASS" starttime="20220123 23:59:09.522" endtime="20220123 23:59:17.711"/>
+<doc>we will close the browser here</doc>
+<status status="PASS" starttime="20220124 20:29:09.833" endtime="20220124 20:29:12.117"/>
 </suite>
-<status status="PASS" starttime="20220123 23:59:09.481" endtime="20220123 23:59:17.723"/>
+<status status="PASS" starttime="20220124 20:28:48.363" endtime="20220124 20:29:12.122"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="10" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
 <stat pass="2" fail="0" skip="0" id="s1-s1" name="001 Automation">TestCases.001 Automation</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s2" name="002 Datareader">TestCases.002 Datareader</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="003 Closebrowser">TestCases.003 Closebrowser</stat>
 </suite>
 </statistics>
 <errors>

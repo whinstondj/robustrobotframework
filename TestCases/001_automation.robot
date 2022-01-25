@@ -14,9 +14,3 @@ Resource    ../PageObject/ContactUsPage.robot
 002 Sending User Information
     Verify Contact Title
     Set Focus on Username Field
-    Type Name
-    Type Email
-    Type Enquiry
-    Take Picture
-    Send Information
-    close browser
